@@ -1,0 +1,16 @@
+# Keep the build context small: the image only needs pyproject.toml, uv.lock and service/.
+.venv/
+.git/
+__pycache__/
+.ipynb_checkpoints/
+
+# Monitoring config is mounted into the Prometheus and Grafana containers, not baked into the image.
+grafana/
+prometheus/
+assets/
+*.md
+
+# Never send secrets to the Docker daemon.
+.env
+.env.*
+!.env.example

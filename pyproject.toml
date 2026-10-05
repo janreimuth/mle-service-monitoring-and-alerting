@@ -1,0 +1,11 @@
+[project]
+name = "mle-service-monitoring-and-alerting"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.142.2",
+    "prometheus-fastapi-instrumentator>=8.1.0",
+    "pydantic>=2.13.5",
+    "scikit-learn>=1.8,<1.9",
+    "uvicorn>=0.54.0",
+]
